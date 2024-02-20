@@ -98,6 +98,10 @@ function play(){
 }
 
 function gameOver(){
+   
+    audio.src = "../audio/game-over.mp3";
+    audio.play();
+    
     hideElementById('play-ground');
     showElementById('play-score');
 
