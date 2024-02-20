@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <main class="min-h-screen bg-center bg-[url(./images/image.jpg)] bg-no-repeat flex flex-col justify-center items-center">
+        <div>
+            <section id="home" class=" space-y-3 flex flex-col justify-center items-center">
+                <img class="w-2/3" src="./images/images.png" alt="">
+                <button onclick="play()" class="btn w-80 -ml-7 hover:bg-violet-600 ">Play Now</button>
+            </section>
+            <section id="play-ground" class="hidden flex flex-col justify-center items-center">
+                <div>
+                    <!-- Screen -->
+                    <div class="artboard artboard-horizontal phone-6 border-[#252634] border-[20px] bg-[#e4c0f7a5]
+                    flex items-center justify-center">
+                       <span id="current-alphabet" class="text-9xl uppercase">Y</span>
+                    </div>
+                    <!-- Keyboard -->
+                    <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd id="q" class="kbd">q</kbd>
+                        <kbd id="w" class="kbd">w</kbd>
+                        <kbd id="e" class="kbd">e</kbd>
+                        <kbd id="r" class="kbd">r</kbd>
+                        <kbd id="t" class="kbd">t</kbd>
+                        <kbd id="y" class="kbd">y</kbd>
+                        <kbd id="u" class="kbd">u</kbd>
+                        <kbd id="i" class="kbd">i</kbd>
+                        <kbd id="o" class="kbd">o</kbd>
+                        <kbd id="p" class="kbd">p</kbd>
+                      </div> 
+                      <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd id="a" class="kbd">a</kbd>
+                        <kbd id="s" class="kbd">s</kbd>
+                        <kbd id="d" class="kbd">d</kbd>
+                        <kbd id="f" class="kbd">f</kbd>
+                        <kbd id="g" class="kbd">g</kbd>
+                        <kbd id="h" class="kbd">h</kbd>
+                        <kbd id="j" class="kbd">j</kbd>
+                        <kbd id="k" class="kbd">k</kbd>
+                        <kbd id="l" class="kbd">l</kbd>
+                      </div> 
+                      <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd id="z" class="kbd">z</kbd>
+                        <kbd id="x" class="kbd">x</kbd>
+                        <kbd id="c" class="kbd">c</kbd>
+                        <kbd id="v" class="kbd">v</kbd>
+                        <kbd id="b" class="kbd">b</kbd>
+                        <kbd id="n" class="kbd">n</kbd>
+                        <kbd id="m" class="kbd">m</kbd>
+                        <kbd id="/" class="kbd">/</kbd>
+                      </div>
+                    <!-- life score -->
+                    <div class="flex flex-row justify-between items-center">
+                        <button class="btn text-2xl bg-[#4D2554] text-white">
+                            <h3>Life</h3>
+                            <img src="./images/Group 23.svg" alt="">
+                            <span id="life">5</span>
+                        </button>
+                        <button class="btn text-2xl bg-[#360490] text-white">
+                            <h3>Score</h3>
+                            <img src="./images/monetization_on.svg" alt="">
+                            <span id="score">0</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section id="play-score" class="hidden">
+                <div class="border rounded p-10 bg-slate-700 space-y-3 flex flex-col justify-center items-center">
+                    <p class="text-2xl text-white">Game Over</p>
+                    <h1 class="text-8xl text-white">Score :
+                        <span id="score-count">0</span>
+                    </h1>
+                    <button onclick="play()" id="" class="btn font-bold text-[18px] text-dark">Play Again</button>
+
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- <script src="./scripts/utility.js"></script>
+    <script src="./scripts/alpha-clash.js"></script> -->
+    <script src="./ps/utili.js"></script>
+    <script src="./ps/alpha.js"></script>
+</body>
+
+</html>
